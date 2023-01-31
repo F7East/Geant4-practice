@@ -1,0 +1,4 @@
+/Users/tengizibrayev/sim/build/CMakeFiles/sim.dir
+/Users/tengizibrayev/sim/build/CMakeFiles/Simulation.dir
+/Users/tengizibrayev/sim/build/CMakeFiles/edit_cache.dir
+/Users/tengizibrayev/sim/build/CMakeFiles/rebuild_cache.dir
