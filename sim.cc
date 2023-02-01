@@ -41,7 +41,10 @@ int main(int argc, char** argv){
     // Get the pointer to the UI manager singleton
     G4UImanager *UImanager = G4UImanager :: GetUIpointer();
 
-    UImanager->ApplyCommand("/vis/open OGL");
+    //showing the stuff:
+    UImanager->ApplyCommand("/vis/open OGL"); //showing screen
+    UImanager->ApplyCommand("vis/viewer/viewpointVector 1 1 1"); //default viewpoint
+    UImanager->ApplyCommand("/vis/drawVolume"); 
 
     // Start the user interface session
     ui->SessionStart();
