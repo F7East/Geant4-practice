@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/tengizibrayev/sim/construction.cc" "CMakeFiles/sim.dir/construction.cc.o" "gcc" "CMakeFiles/sim.dir/construction.cc.o.d"
+  "/Users/tengizibrayev/sim/physics.cc" "CMakeFiles/sim.dir/physics.cc.o" "gcc" "CMakeFiles/sim.dir/physics.cc.o.d"
   "/Users/tengizibrayev/sim/sim.cc" "CMakeFiles/sim.dir/sim.cc.o" "gcc" "CMakeFiles/sim.dir/sim.cc.o.d"
   )
 

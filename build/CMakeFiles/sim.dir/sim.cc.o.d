@@ -567,4 +567,61 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpenGLImmediateQt.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpenGLQt.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpenGLStoredQt.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Qt3D.hh
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Qt3D.hh \
+  /Users/tengizibrayev/sim/construction.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserDetectorConstruction.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4GeomTypes.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4GeomConfig.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4CSGSolid.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Polyhedron.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/HepPolyhedron.h \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4TwoVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/TwoVector.h \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/TwoVector.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PVPlacement.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistManager.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistElementBuilder.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistMaterialBuilder.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
+  /Users/tengizibrayev/sim/physics.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserPhysicsList.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ProductionCutsTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialCutsCouple.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ProductionCuts.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MCCIndexConversionTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUPLSplitter.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VModularPhysicsList.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VPhysicsConstructor.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsListHelper.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsListOrderingParameter.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ThreadLocalSingleton.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Cache.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4CacheDetails.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Backtrace.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cxxabi.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__cxxabi_config.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/execinfo.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/os/base.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/os/availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/uuid/uuid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_uuid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_posix_vdisable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_seek_set.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/gethostuuid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cfenv \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fenv.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/fenv.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/csignal \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/regex \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4EmStandardPhysics.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpticalPhysics.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpticalParameters.hh
