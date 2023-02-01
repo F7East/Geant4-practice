@@ -9,7 +9,8 @@ include (${Geant4_USE_FILE})
 file(GLOB sources ${PROJECT_SOURCE_DIR}/*.cc)
 file(GLOB sources ${PROJECT_SOURCE_DIR}/*.hh)
 
-add_executable(sim sim.cc ${sources} ${headers})
+#do not forget to add all of the executable files here
+add_executable(sim sim.cc construction.cc physics.cc ${sources} ${headers})
 target_link_libraries(sim ${Geant4_LIBRARIES})
 
 add_custom_target(Simulation DEPENDS sim)

@@ -4,7 +4,8 @@
 #include "G4VisManager.hh"
 #include "G4UIExecutive.hh"
 #include "G4VisExecutive.hh"
-
+#include "construction.hh"
+#include "physics.hh"
 /*
 This is a basic script to run a Geant4 simulation using the 
 Geant4 toolkit. The code creates and sets up objects that control 
@@ -21,6 +22,12 @@ int main(int argc, char** argv){
 
     // Create a new instance of G4RunManager
     G4RunManager *runManager = new G4RunManager();
+    runManager->SetUserInitialization(new MyDetectorConstruction());
+    
+    MyPhysicsList* physicsList = new MyPhysicsList();
+    runManager->SetUserInitialization(physicsList);
+    
+    runManager->Initialize();
     
     // Create a new instance of G4UIExecutive to handle the user interface
     G4UIExecutive *ui = new G4UIExecutive(argc, argv);
@@ -32,7 +39,9 @@ int main(int argc, char** argv){
     visManager->Initialize();
 
     // Get the pointer to the UI manager singleton
-    G4UImanager *UImanger = G4UImanager :: GetUIpointer();
+    G4UImanager *UImanager = G4UImanager :: GetUIpointer();
+
+    UImanager->ApplyCommand("/vis/open OGL");
 
     // Start the user interface session
     ui->SessionStart();
