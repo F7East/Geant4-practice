@@ -1,4 +1,4 @@
-CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
+CMakeFiles/action.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/pthread.h \

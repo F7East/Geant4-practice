@@ -6,6 +6,7 @@
 #include "G4VisExecutive.hh"
 #include "construction.hh"
 #include "physics.hh"
+#include "action.hh"
 /*
 This is a basic script to run a Geant4 simulation using the 
 Geant4 toolkit. The code creates and sets up objects that control 
@@ -26,6 +27,7 @@ int main(int argc, char** argv){
     
     MyPhysicsList* physicsList = new MyPhysicsList();
     runManager->SetUserInitialization(physicsList);
+    runManager->SetUserInitialization(new MyActionInitialization());
     
     runManager->Initialize();
     
@@ -44,7 +46,9 @@ int main(int argc, char** argv){
     //showing the stuff:
     UImanager->ApplyCommand("/vis/open OGL"); //showing screen
     UImanager->ApplyCommand("vis/viewer/viewpointVector 1 1 1"); //default viewpoint
-    UImanager->ApplyCommand("/vis/drawVolume"); 
+    UImanager->ApplyCommand("/vis/drawVolume");
+    UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
+    UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
 
     // Start the user interface session
     ui->SessionStart();
