@@ -49,6 +49,7 @@ int main(int argc, char** argv){
     UImanager->ApplyCommand("/vis/drawVolume");
     UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
+    UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
 
     // Start the user interface session
     ui->SessionStart();
