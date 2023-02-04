@@ -622,7 +622,9 @@ CMakeFiles/sim.dir/construction.cc.o: /Users/tengizibrayev/sim/construction.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistMaterialBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc
 
 CMakeFiles/sim.dir/generator.cc.o: /Users/tengizibrayev/sim/generator.cc \
   /Users/tengizibrayev/sim/generator.hh \
@@ -1807,6 +1809,8 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
   /Users/tengizibrayev/sim/physics.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserPhysicsList.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ProductionCutsTable.hh \
@@ -1999,8 +2003,6 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
 
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Navigator.hh:
 
-/Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Random/RandStudentT.icc:
-
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Random/RandPoissonQ.icc:
 
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Random/RandLandau.h:
@@ -2123,9 +2125,7 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/signal.h:
 
-/Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/RotationY.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fenv.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/fenv.h:
 
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ParticleChange.icc:
 
@@ -2314,6 +2314,10 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VPrimaryGenerator.hh:
 
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/RotationZ.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fenv.h:
+
+/Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/RotationY.h:
 
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/RotationX.icc:
 
@@ -2617,8 +2621,6 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/fenv.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_fd_set.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__nullptr:
@@ -2893,6 +2895,10 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_timespec.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_uid_t.h:
+
+/Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc:
+
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/geomdefs.hh:
 
 /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ReplicaNavigation.icc:
@@ -3099,9 +3105,11 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_mbstate_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_uid_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_wchar_t.h:
+
+/Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Random/RandStudentT.icc:
+
+/Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh:
 
 /Users/tengizibrayev/sim/generator.hh:
 

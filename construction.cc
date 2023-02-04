@@ -10,7 +10,7 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
     
     // adding stainless steel Stainless Steel 304 1.4301 (https://www.thyssenkrupp-materials.co.uk/stainless-steel-304-14301.html)
 
-    G4Material *stainlessSteel = new G4Material("StainlessSteel", 8.000 * g/cm3, 9);
+        G4Material *stainlessSteel = new G4Material("StainlessSteel", 8.000 * g/cm3, 9);
 
         // Define the elements composing the material
         G4Element*  C = nist -> FindOrBuildElement("C");
@@ -36,53 +36,70 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
     
     // Create titanium
 
-    G4Material *titanium = new G4Material("Titanium", 4.5 * g/cm3, 1);
-
+        G4Material *titanium = new G4Material("Titanium", 4.5 * g/cm3, 1);
         G4Element *Ti = nist -> FindOrBuildElement("Ti");
         titanium -> AddElement(Ti, 1.00);
 
     // air and its optical properties
-    G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.2};
-    G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
-    G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();
-    G4double rindexWorld[2] = {1.0, 1.0};
-    mptWorld -> AddProperty("RINDEX", energy, rindexWorld, 2);
-    worldMat -> SetMaterialPropertiesTable(mptWorld);
+        G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.2};
+        G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
+        G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();
+        G4double rindexWorld[2] = {1.0, 1.0};
+        mptWorld -> AddProperty("RINDEX", energy, rindexWorld, 2);
+        worldMat -> SetMaterialPropertiesTable(mptWorld);
 
-    //to create a box (a space to be filled) (0.5 is a half size in x,y, or z direction)
-    G4Box *solidWorld = new G4Box("solidWorld", 1.*m,1.*m,1.*m); // solidWorld has to be in "" not ''
+    // adding world volume 
 
-    //to add the world material to the solidWorld, fill it in ig?
-    G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat,"logicWorld");
-
-    //adding physical volume
-    G4VPhysicalVolume *physWorld = new G4PVPlacement(0,G4ThreeVector(0.,0.,0.), logicWorld, "physWorld", 0, false, 0, true);
+        G4Box *solidWorld = new G4Box("solidWorld", 1.*m,1.*m,1.*m);
+        G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat,"logicWorld");
+        G4VPhysicalVolume *physWorld = new G4PVPlacement(0,G4ThreeVector(0.,0.,0.), logicWorld,\
+        "physWorld", 0, false, 0, true);
 
     // adding TES as instucted
-    G4Box *TES = new G4Box("TES", 20*um, 20*um, 20*nm);
-    G4LogicalVolume *logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
-    G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(0. ,0. , 0.2*m), logicTES,\
-        "physTES", logicWorld, false, 0 , true);
+
+        G4Box *TES = new G4Box("TES", 20*um, 20*um, 20*nm);
+        G4LogicalVolume *logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
+        G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(0. ,0. , 0.2*m), logicTES,\
+            "physTES", logicWorld, false, 0 , true);
 
     // adding Dilution Refrigerador
 
-    // Define the cylinder dimensions
-    G4double height = 1. * m;
-    G4double innerRadius = 247 * mm;
-    G4double outerRadius = 250 * mm;
-    G4double startAngle = 0. * deg;
-    G4double spanningAngle = 360. * deg;
+        // Define the cylinder dimensions
+        G4double height = 1. * m;
+        G4double innerRadius = 247 * mm;
+        G4double outerRadius = 250 * mm;
+        G4double startAngle = 0. * deg;
+        G4double spanningAngle = 360. * deg;
 
-    // Create the cylinder solid volume
-    G4Tubs *cylinder = new G4Tubs("Cylinder", innerRadius, outerRadius, height / 2, startAngle, spanningAngle);
-    G4LogicalVolume *logicalCylinder = new G4LogicalVolume(cylinder, stainlessSteel, "LogicalCylinder");
+        // Create the cylinder solid volume
+        G4Tubs *cylinder = new G4Tubs("Cylinder", innerRadius, outerRadius, height / 2, startAngle, spanningAngle);
+        G4LogicalVolume *logicalCylinder = new G4LogicalVolume(cylinder, stainlessSteel, "LogicalCylinder");
 
-    // Place the cylinder in the world volume
-    G4ThreeVector cylinderPosition(0., 0., 0.);
-    G4RotationMatrix cylinderRotation;
-    G4Transform3D cylinderTransform(cylinderRotation, cylinderPosition);
-    G4VPhysicalVolume *physCylinder =  new G4PVPlacement(cylinderTransform, logicalCylinder, "PhysicalCylinder",\
-        logicWorld, false, 0);
+        // Place the cylinder in the world volume
+        G4ThreeVector cylinderPosition(0., 0., 0.);
+        G4RotationMatrix cylinderRotation;
+        G4Transform3D cylinderTransform(cylinderRotation, cylinderPosition);
+        new G4PVPlacement(cylinderTransform, logicalCylinder, "PhysicalCylinder", logicWorld, false, 0);
+
+        G4double diskRadius = 0.25 * m;
+        G4double diskThickness = 3. * mm;
+
+        // Create the disk solid volumes
+        G4Tubs* disk = new G4Tubs("Disk", 0., diskRadius, diskThickness / 2, 0., 360. * deg);
+
+        // Create logical volumes for the disks
+        G4LogicalVolume* logicalDisk = new G4LogicalVolume(disk, stainlessSteel, "LogicalDisk");
+
+        // Place the disks at both ends of the cylinder
+        G4ThreeVector diskPosition1(0., 0., -height / 2. - diskThickness / 2.);
+        G4RotationMatrix diskRotation1;
+        G4Transform3D diskTransform1(diskRotation1, diskPosition1);
+        new G4PVPlacement(diskTransform1, logicalDisk, "PhysicalDisk1", logicWorld, false, 0);
+
+        G4ThreeVector diskPosition2(0., 0., height / 2. + diskThickness / 2.);
+        G4RotationMatrix diskRotation2;
+        G4Transform3D diskTransform2(diskRotation2, diskPosition2);
+        new G4PVPlacement(diskTransform2, logicalDisk, "PhysicalDisk2", logicWorld, false, 0);
 
     return physWorld; //highest mother volue has to be returned 
 
