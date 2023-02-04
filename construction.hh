@@ -18,6 +18,9 @@ check will evaluate to false and the code between "#ifndef" and "#endif" will be
 #include "G4PVPlacement.hh"
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh" // gets the SI units
+#include "G4RotationMatrix.hh"
+#include "G4Transform3D.hh"
+#include "G4Tubs.hh"
 
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction{

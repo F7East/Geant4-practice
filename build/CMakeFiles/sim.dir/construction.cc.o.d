@@ -340,4 +340,6 @@ CMakeFiles/sim.dir/construction.cc.o: \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistMaterialBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc

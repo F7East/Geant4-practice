@@ -587,6 +587,8 @@ CMakeFiles/action.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
   /Users/tengizibrayev/sim/physics.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserPhysicsList.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ProductionCutsTable.hh \
