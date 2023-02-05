@@ -581,14 +581,22 @@ CMakeFiles/action.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/TwoVector.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PVPlacement.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpticalSurface.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Physics2DVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Physics2DVector.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SurfaceProperty.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalBorderSurface.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalSurface.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalSurface.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalBorderSurface.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistManager.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistElementBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistMaterialBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
   /Users/tengizibrayev/sim/physics.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserPhysicsList.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ProductionCutsTable.hh \

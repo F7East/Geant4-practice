@@ -309,6 +309,33 @@ CMakeFiles/sim.dir/construction.cc.o: \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Visible.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PVPlacement.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VisAttributes.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/graphics_reps_defs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Colour.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Color.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VisAttributes.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpticalSurface.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Physics2DVector.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stack \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/deque \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVectorType.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Physics2DVector.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SurfaceProperty.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalBorderSurface.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalSurface.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalSurface.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalBorderSurface.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertyVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsFreeVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Log.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistManager.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Material.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Element.hh \
@@ -317,18 +344,6 @@ CMakeFiles/sim.dir/construction.cc.o: \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IsotopeVector.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElementTable.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElementVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesTable.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertyVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsFreeVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/filesystem \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stack \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/deque \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Log.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVectorType.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IonisParamMat.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Exp.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SandiaTable.hh \
@@ -340,6 +355,4 @@ CMakeFiles/sim.dir/construction.cc.o: \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistMaterialBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Pow.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SystemOfUnits.hh
