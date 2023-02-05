@@ -50,6 +50,12 @@ int main(int argc, char** argv){
     UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+    UImanager->ApplyCommand("/vis/viewer/set/viewpointThetaPhi 90 0");
+    UImanager->ApplyCommand("/vis/viewer/set/style frame");
+    // UImanager->ApplyCommand("/vis/geometry/set/visibility logicWorld 0 false");
+    UImanager->ApplyCommand("/vis/scene/add/scale");
+    UImanager->ApplyCommand("/vis/scene/add/axes");
+    UImanager->ApplyCommand("/vis/scene/add/frame");
 
     // Start the user interface session
     ui->SessionStart();

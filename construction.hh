@@ -11,16 +11,28 @@ check will evaluate to false and the code between "#ifndef" and "#endif" will be
 #ifndef CONSTRUCTION_HH
 #define CONSTRUCTION_HH
 
+// construction 
 #include "G4VUserDetectorConstruction.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
 #include "G4PVPlacement.hh"
-#include "G4NistManager.hh"
-#include "G4SystemOfUnits.hh" // gets the SI units
+
+// spacial management
 #include "G4RotationMatrix.hh"
 #include "G4Transform3D.hh"
 #include "G4Tubs.hh"
+
+// visual properties
+#include "G4VisAttributes.hh"
+#include "G4Colour.hh"
+#include "G4OpticalSurface.hh"
+#include "G4LogicalBorderSurface.hh"
+#include "G4MaterialPropertiesTable.hh"
+
+// elements and units
+#include "G4NistManager.hh"
+#include "G4SystemOfUnits.hh" // gets the SI units
 
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction{
