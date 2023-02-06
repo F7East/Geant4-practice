@@ -17,6 +17,7 @@ check will evaluate to false and the code between "#ifndef" and "#endif" will be
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
 #include "G4PVPlacement.hh"
+#include "detector.hh"
 
 // spacial management
 #include "G4RotationMatrix.hh"
@@ -42,6 +43,10 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction{
     ~MyDetectorConstruction();
 
     virtual G4VPhysicalVolume *Construct();
+    
+    private:
+    G4LogicalVolume *logicTES;
+    virtual void ConstructSDandField();
 
 };
 

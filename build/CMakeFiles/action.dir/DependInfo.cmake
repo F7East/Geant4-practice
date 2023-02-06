@@ -10,9 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/tengizibrayev/sim/action.cc" "CMakeFiles/action.dir/action.cc.o" "gcc" "CMakeFiles/action.dir/action.cc.o.d"
   "/Users/tengizibrayev/sim/construction.cc" "CMakeFiles/action.dir/construction.cc.o" "gcc" "CMakeFiles/action.dir/construction.cc.o.d"
+  "/Users/tengizibrayev/sim/detector.cc" "CMakeFiles/action.dir/detector.cc.o" "gcc" "CMakeFiles/action.dir/detector.cc.o.d"
   "/Users/tengizibrayev/sim/generator.cc" "CMakeFiles/action.dir/generator.cc.o" "gcc" "CMakeFiles/action.dir/generator.cc.o.d"
   "/Users/tengizibrayev/sim/physics.cc" "CMakeFiles/action.dir/physics.cc.o" "gcc" "CMakeFiles/action.dir/physics.cc.o.d"
   "/Users/tengizibrayev/sim/sim.cc" "CMakeFiles/action.dir/sim.cc.o" "gcc" "CMakeFiles/action.dir/sim.cc.o.d"
+  "/Users/tengizibrayev/sim/stepping_action.cc" "CMakeFiles/action.dir/stepping_action.cc.o" "gcc" "CMakeFiles/action.dir/stepping_action.cc.o.d"
   )
 
 # Targets to which this target links.

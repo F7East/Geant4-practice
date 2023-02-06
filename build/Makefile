@@ -196,6 +196,33 @@ construction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/construction.cc.s
 .PHONY : construction.cc.s
 
+detector.o: detector.cc.o
+.PHONY : detector.o
+
+# target to build an object file
+detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/action.dir/build.make CMakeFiles/action.dir/detector.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/detector.cc.o
+.PHONY : detector.cc.o
+
+detector.i: detector.cc.i
+.PHONY : detector.i
+
+# target to preprocess a source file
+detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/action.dir/build.make CMakeFiles/action.dir/detector.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/detector.cc.i
+.PHONY : detector.cc.i
+
+detector.s: detector.cc.s
+.PHONY : detector.s
+
+# target to generate assembly for a file
+detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/action.dir/build.make CMakeFiles/action.dir/detector.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/detector.cc.s
+.PHONY : detector.cc.s
+
 generator.o: generator.cc.o
 .PHONY : generator.o
 
@@ -277,6 +304,33 @@ sim.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/sim.cc.s
 .PHONY : sim.cc.s
 
+stepping_action.o: stepping_action.cc.o
+.PHONY : stepping_action.o
+
+# target to build an object file
+stepping_action.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/action.dir/build.make CMakeFiles/action.dir/stepping_action.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/stepping_action.cc.o
+.PHONY : stepping_action.cc.o
+
+stepping_action.i: stepping_action.cc.i
+.PHONY : stepping_action.i
+
+# target to preprocess a source file
+stepping_action.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/action.dir/build.make CMakeFiles/action.dir/stepping_action.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/stepping_action.cc.i
+.PHONY : stepping_action.cc.i
+
+stepping_action.s: stepping_action.cc.s
+.PHONY : stepping_action.s
+
+# target to generate assembly for a file
+stepping_action.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/action.dir/build.make CMakeFiles/action.dir/stepping_action.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/stepping_action.cc.s
+.PHONY : stepping_action.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -293,6 +347,9 @@ help:
 	@echo "... construction.o"
 	@echo "... construction.i"
 	@echo "... construction.s"
+	@echo "... detector.o"
+	@echo "... detector.i"
+	@echo "... detector.s"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"
@@ -302,6 +359,9 @@ help:
 	@echo "... sim.o"
 	@echo "... sim.i"
 	@echo "... sim.s"
+	@echo "... stepping_action.o"
+	@echo "... stepping_action.i"
+	@echo "... stepping_action.s"
 .PHONY : help
 
 

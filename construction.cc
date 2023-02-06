@@ -16,6 +16,13 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
     // visAttributes.SetForceWireframe(true);
     visAttributes.SetColour(G4Colour(0.8, 0.8, 0.8));
     
+    G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.3};
+
+    // centering
+
+        G4double x = 0.6 * m;
+        G4double y = 0. * m;
+
     // adding stainless steel Stainless Steel 304 1.4301 (https://www.thyssenkrupp-materials.co.uk/stainless-steel-304-14301.html)
 
         G4Material *stainlessSteel = new G4Material("StainlessSteel", 8.000 * g/cm3, 9);
@@ -46,6 +53,13 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
         opticalStainlessSteel->SetType(dielectric_dielectric);
         opticalStainlessSteel->SetFinish(polished);
         opticalStainlessSteel->SetModel(unified);
+
+        // Create a material properties table for the optical surface
+        G4double rindexStainlessSteel[2] = {2.82, 0.90};
+        G4MaterialPropertiesTable *mptStainlessSteel = new G4MaterialPropertiesTable();
+        mptStainlessSteel->AddProperty("RINDEX", energy, rindexStainlessSteel, 2);
+        opticalStainlessSteel->SetMaterialPropertiesTable(mptStainlessSteel);
+
     
     // Create titanium
 
@@ -53,8 +67,19 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
         G4Element *Ti = nist -> FindOrBuildElement("Ti");
         titanium -> AddElement(Ti, 1.00);
 
+        G4OpticalSurface *opticalTitanium = new G4OpticalSurface("opticalTitanium");
+        opticalTitanium->SetType(dielectric_dielectric);
+        opticalTitanium->SetFinish(polished);
+        opticalTitanium->SetModel(unified);
+
+        // Create a material properties table for the optical surface
+        G4double rindexTitanium[2] = {3.23, 1.44};
+        G4MaterialPropertiesTable *mptTitanium = new G4MaterialPropertiesTable();
+        mptTitanium->AddProperty("RINDEX", energy, rindexTitanium, 2);
+        opticalTitanium->SetMaterialPropertiesTable(mptTitanium);
+
     // air and its optical properties
-        G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.3};
+
         G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
         G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();
         G4double rindexWorld[2] = {1.0, 1.0};
@@ -68,12 +93,22 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
         G4VPhysicalVolume *physWorld = new G4PVPlacement(0,G4ThreeVector(0.,0.,0.), logicWorld,\
         "physWorld", 0, false, 0, true);
 
-    // adding TES as instucted
+    // adding Envelope 
+
+        // G4Box* solidEnv = new G4Box("Envelope", 1., 1., 1.);
+        // G4LogicalVolume* logicEnv = new G4LogicalVolume(solidEnv, env_mat, "Envelope");        
+        // new G4PVPlacement(0,G4ThreeVector(),logicEnv,"Envelope",logicWorld,false,0,checkOverlaps);    
+
+    // adding TES
 
         G4Box *TES = new G4Box("TES", 20*um, 20*um, 20*nm);
-        G4LogicalVolume *logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
-        G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(0. ,0. , 0.2*m), logicTES,\
+        logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
+        G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(x , y , -0.2*m), logicTES,\
             "physTES", logicWorld, false, 0 , true);
+        G4LogicalBorderSurface* logicalBorderTES = new G4LogicalBorderSurface("LogicalBorderTES", \
+            physTES, physWorld, opticalTitanium);
+
+        
 
     // adding Dilution Refrigerador
 
@@ -92,20 +127,11 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
         logicalCylinder->SetVisAttributes(visAttributes);
 
         // Place the cylinder in the world volume
-        G4ThreeVector cylinderPosition(0., 0., 0.);
+        G4ThreeVector cylinderPosition(x, y, 0.);
         G4RotationMatrix cylinderRotation;
         G4Transform3D cylinderTransform(cylinderRotation, cylinderPosition);
-        G4VPhysicalVolume *physicalCylinder = new G4PVPlacement(cylinderTransform, logicalCylinder, "PhysicalCylinder", logicWorld, false, 0);
-
-        // Create a material properties table for the optical surface
-        G4double rindexStainlessSteel[2] = {2.82, 0.90};
-
-        G4MaterialPropertiesTable *mptStainlessSteel = new G4MaterialPropertiesTable();
-        mptStainlessSteel->AddProperty("RINDEX", energy, rindexStainlessSteel, 2);
-        // mptStainlessSteel->AddProperty("SPECULARLOBECONSTANT", ...);
-        // mptStainlessSteel->AddProperty("SPECULARSPIKECONSTANT", ...);
-        // mptStainlessSteel->AddProperty("BACKSCATTERCONSTANT", ...);
-        opticalStainlessSteel->SetMaterialPropertiesTable(mptStainlessSteel);
+        G4VPhysicalVolume *physicalCylinder = new G4PVPlacement(cylinderTransform, logicalCylinder, "PhysicalCylinder", \
+            logicWorld, false, 0);
 
         // Create a logical border surface between the cylinder and the world volume
         G4LogicalBorderSurface* logicalBorderCylinder = new G4LogicalBorderSurface("LogicalBorderSurface", \
@@ -122,14 +148,14 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
         G4LogicalVolume* logicalDisk = new G4LogicalVolume(disk, stainlessSteel, "LogicalDisk");
 
         // Place the disks at both ends of the cylinder
-        G4ThreeVector diskPosition1(0., 0., -height / 2. - diskThickness / 2.);
+        G4ThreeVector diskPosition1(x, y, -height / 2. - diskThickness / 2.);
         G4RotationMatrix diskRotation1;
         G4Transform3D diskTransform1(diskRotation1, diskPosition1);
         G4VPhysicalVolume  *physDisk1 = new G4PVPlacement(diskTransform1, logicalDisk, "PhysicalDisk1", logicWorld, false, 0);
         G4LogicalBorderSurface* logicalBorderDisk1 = new G4LogicalBorderSurface("LogicalBorderSurface", \
             physDisk1, physWorld, opticalStainlessSteel);
 
-        G4ThreeVector diskPosition2(0., 0., height / 2. + diskThickness / 2.);
+        G4ThreeVector diskPosition2(x, y, height / 2. + diskThickness / 2.);
         G4RotationMatrix diskRotation2;
         G4Transform3D diskTransform2(diskRotation2, diskPosition2);
         G4VPhysicalVolume  *physDisk2 = new G4PVPlacement(diskTransform2, logicalDisk, "PhysicalDisk2", logicWorld, false, 0);
@@ -139,4 +165,9 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
 
     return physWorld; //highest mother volue has to be returned 
 
+}
+
+void MyDetectorConstruction :: ConstructSDandField(){
+    MySensitiveDetector *sensDet = new MySensitiveDetector("SensetiveDetector");
+    logicTES -> SetSensitiveDetector(sensDet);
 }

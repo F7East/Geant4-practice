@@ -568,6 +568,8 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpenGLQt.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpenGLStoredQt.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Qt3D.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Text.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Text.icc \
   /Users/tengizibrayev/sim/construction.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserDetectorConstruction.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.hh \
@@ -581,6 +583,12 @@ CMakeFiles/sim.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/CLHEP/Vector/TwoVector.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PVPlacement.hh \
+  /Users/tengizibrayev/sim/detector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VSensitiveDetector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VReadOutGeometry.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SensitiveVolumeList.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4CollectionNameVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VSDFilter.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpticalSurface.hh \

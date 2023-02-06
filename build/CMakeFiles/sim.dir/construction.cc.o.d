@@ -309,6 +309,87 @@ CMakeFiles/sim.dir/construction.cc.o: \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Visible.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Box.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PVPlacement.hh \
+  /Users/tengizibrayev/sim/detector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VSensitiveDetector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VHit.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Step.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4StepPoint.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Allocator.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4AllocatorPool.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SteppingControl.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4StepStatus.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4TouchableHandle.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VTouchable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VTouchable.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ReferenceCountedHandle.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Material.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Element.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Isotope.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IonisParamElm.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IsotopeVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElementTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElementVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertyVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsFreeVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stack \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/deque \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Log.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVectorType.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IonisParamMat.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Exp.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SandiaTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OrderedTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4DataVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4DataVector.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialTable.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4StepPoint.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4TrackVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Profiler.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Profiler.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/PTL/Globals.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/PTL/Types.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/PTL/Utility.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/set \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/array \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Step.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Track.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/trkdefs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4DynamicParticle.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ParticleDefinition.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PDefManager.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/pwdefs.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ParticleDefinition.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LorentzVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ParticleMomentum.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElectronOccupancy.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4DynamicParticle.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4TrackStatus.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VUserTrackInformation.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsModelCatalog.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Track.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4HCofThisEvent.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VHitsCollection.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VReadOutGeometry.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SensitiveVolumeList.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4TouchableHistory.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationHistory.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4AffineTransform.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4AffineTransform.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationLevel.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationLevelRep.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationLevelRep.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationLevel.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationHistoryPool.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NavigationHistory.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4TouchableHistory.icc \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4CollectionNameVector.hh \
+  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VSDFilter.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Tubs.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VisAttributes.hh \
@@ -318,39 +399,13 @@ CMakeFiles/sim.dir/construction.cc.o: \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4VisAttributes.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OpticalSurface.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Physics2DVector.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/filesystem \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stack \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/deque \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVectorType.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Physics2DVector.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SurfaceProperty.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalBorderSurface.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalSurface.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalSurface.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4LogicalBorderSurface.icc \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesTable.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialPropertyVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsFreeVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Log.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4PhysicsVector.icc \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistManager.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Material.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Element.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Isotope.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IonisParamElm.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IsotopeVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElementTable.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ElementVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4IonisParamMat.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4Exp.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4SandiaTable.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4OrderedTable.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4DataVector.hh \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4DataVector.icc \
-  /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4MaterialTable.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistElementBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4NistMaterialBuilder.hh \
   /Users/tengizibrayev/Desktop/Geant4/project/include/Geant4/G4ICRU90StoppingData.hh \

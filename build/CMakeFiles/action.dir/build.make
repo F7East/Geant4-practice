@@ -111,10 +111,24 @@ CMakeFiles/action.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/action.dir/construction.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tengizibrayev/sim/construction.cc -o CMakeFiles/action.dir/construction.cc.s
 
+CMakeFiles/action.dir/detector.cc.o: CMakeFiles/action.dir/flags.make
+CMakeFiles/action.dir/detector.cc.o: /Users/tengizibrayev/sim/detector.cc
+CMakeFiles/action.dir/detector.cc.o: CMakeFiles/action.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/action.dir/detector.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/action.dir/detector.cc.o -MF CMakeFiles/action.dir/detector.cc.o.d -o CMakeFiles/action.dir/detector.cc.o -c /Users/tengizibrayev/sim/detector.cc
+
+CMakeFiles/action.dir/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/action.dir/detector.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tengizibrayev/sim/detector.cc > CMakeFiles/action.dir/detector.cc.i
+
+CMakeFiles/action.dir/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/action.dir/detector.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tengizibrayev/sim/detector.cc -o CMakeFiles/action.dir/detector.cc.s
+
 CMakeFiles/action.dir/physics.cc.o: CMakeFiles/action.dir/flags.make
 CMakeFiles/action.dir/physics.cc.o: /Users/tengizibrayev/sim/physics.cc
 CMakeFiles/action.dir/physics.cc.o: CMakeFiles/action.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/action.dir/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/action.dir/physics.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/action.dir/physics.cc.o -MF CMakeFiles/action.dir/physics.cc.o.d -o CMakeFiles/action.dir/physics.cc.o -c /Users/tengizibrayev/sim/physics.cc
 
 CMakeFiles/action.dir/physics.cc.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/action.dir/physics.cc.s: cmake_force
 CMakeFiles/action.dir/sim.cc.o: CMakeFiles/action.dir/flags.make
 CMakeFiles/action.dir/sim.cc.o: /Users/tengizibrayev/sim/sim.cc
 CMakeFiles/action.dir/sim.cc.o: CMakeFiles/action.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/action.dir/sim.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/action.dir/sim.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/action.dir/sim.cc.o -MF CMakeFiles/action.dir/sim.cc.o.d -o CMakeFiles/action.dir/sim.cc.o -c /Users/tengizibrayev/sim/sim.cc
 
 CMakeFiles/action.dir/sim.cc.i: cmake_force
@@ -139,13 +153,29 @@ CMakeFiles/action.dir/sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/action.dir/sim.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tengizibrayev/sim/sim.cc -o CMakeFiles/action.dir/sim.cc.s
 
+CMakeFiles/action.dir/stepping_action.cc.o: CMakeFiles/action.dir/flags.make
+CMakeFiles/action.dir/stepping_action.cc.o: /Users/tengizibrayev/sim/stepping_action.cc
+CMakeFiles/action.dir/stepping_action.cc.o: CMakeFiles/action.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/action.dir/stepping_action.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/action.dir/stepping_action.cc.o -MF CMakeFiles/action.dir/stepping_action.cc.o.d -o CMakeFiles/action.dir/stepping_action.cc.o -c /Users/tengizibrayev/sim/stepping_action.cc
+
+CMakeFiles/action.dir/stepping_action.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/action.dir/stepping_action.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tengizibrayev/sim/stepping_action.cc > CMakeFiles/action.dir/stepping_action.cc.i
+
+CMakeFiles/action.dir/stepping_action.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/action.dir/stepping_action.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tengizibrayev/sim/stepping_action.cc -o CMakeFiles/action.dir/stepping_action.cc.s
+
 # Object files for target action
 action_OBJECTS = \
 "CMakeFiles/action.dir/action.cc.o" \
 "CMakeFiles/action.dir/generator.cc.o" \
 "CMakeFiles/action.dir/construction.cc.o" \
+"CMakeFiles/action.dir/detector.cc.o" \
 "CMakeFiles/action.dir/physics.cc.o" \
-"CMakeFiles/action.dir/sim.cc.o"
+"CMakeFiles/action.dir/sim.cc.o" \
+"CMakeFiles/action.dir/stepping_action.cc.o"
 
 # External object files for target action
 action_EXTERNAL_OBJECTS =
@@ -153,8 +183,10 @@ action_EXTERNAL_OBJECTS =
 action: CMakeFiles/action.dir/action.cc.o
 action: CMakeFiles/action.dir/generator.cc.o
 action: CMakeFiles/action.dir/construction.cc.o
+action: CMakeFiles/action.dir/detector.cc.o
 action: CMakeFiles/action.dir/physics.cc.o
 action: CMakeFiles/action.dir/sim.cc.o
+action: CMakeFiles/action.dir/stepping_action.cc.o
 action: CMakeFiles/action.dir/build.make
 action: /Users/tengizibrayev/Desktop/Geant4/project/lib/libG4Tree.dylib
 action: /Users/tengizibrayev/Desktop/Geant4/project/lib/libG4FR.dylib
@@ -207,7 +239,7 @@ action: /Users/tengizibrayev/Desktop/Geant4/project/lib/libG4global.dylib
 action: /Users/tengizibrayev/Desktop/Geant4/project/lib/libG4clhep.dylib
 action: /Users/tengizibrayev/Desktop/Geant4/project/lib/libG4ptl.0.0.2.dylib
 action: CMakeFiles/action.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable action"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tengizibrayev/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable action"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/action.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

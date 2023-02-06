@@ -17,7 +17,7 @@ void MyPrimaryGenerator :: GeneratePrimaries(G4Event *anEvent) {
     G4ParticleDefinition *particle = particleTable->FindParticle("mu-");
     
     // give the particle a position and a momentum in z direction
-    G4ThreeVector pos(0., 0., -0.9*m);
+    G4ThreeVector pos(0.6 * m, 0., -0.9*m);
     G4ThreeVector mom(0., 0., 1.);
 
     // implement it
