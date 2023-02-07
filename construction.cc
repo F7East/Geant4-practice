@@ -101,7 +101,7 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
 
     // adding TES
 
-        G4Box *TES = new G4Box("TES", 20*um, 20*um, 20*nm);
+        G4Box *TES = new G4Box("TES", 20 * mm, 20 * mm, 0.20 * mm);
         logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
         G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(x , y , -0.2*m), logicTES,\
             "physTES", logicWorld, false, 0 , true);
@@ -169,5 +169,6 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
 
 void MyDetectorConstruction :: ConstructSDandField(){
     MySensitiveDetector *sensDet = new MySensitiveDetector("SensetiveDetector");
+    sensDet ->SetThreshold(1*eV);
     logicTES -> SetSensitiveDetector(sensDet);
 }
