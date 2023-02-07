@@ -103,7 +103,7 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
 
         G4Box *TES = new G4Box("TES", 20 * mm, 20 * mm, 0.20 * mm);
         logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
-        G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(x , y , -0.2*m), logicTES,\
+        G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(x , y , 0.2*m), logicTES,\
             "physTES", logicWorld, false, 0 , true);
         G4LogicalBorderSurface* logicalBorderTES = new G4LogicalBorderSurface("LogicalBorderTES", \
             physTES, physWorld, opticalTitanium);
