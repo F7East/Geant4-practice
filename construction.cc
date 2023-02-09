@@ -93,6 +93,10 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
         G4VPhysicalVolume *physWorld = new G4PVPlacement(0,G4ThreeVector(0.,0.,0.), logicWorld,\
         "physWorld", 0, false, 0, true);
 
+        G4UserLimits* userLimits = new G4UserLimits;
+        userLimits->SetMaxAllowedStep(1 * nanometer);
+        logicWorld->SetUserLimits(userLimits);
+
     // adding Envelope 
 
         // G4Box* solidEnv = new G4Box("Envelope", 1., 1., 1.);
@@ -101,15 +105,13 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
 
     // adding TES
 
-        G4Box *TES = new G4Box("TES", 20 * mm, 20 * mm, 0.20 * mm);
+        G4Box *TES = new G4Box("TES", 20 * micrometer, 20 * micrometer, 20 * nanometer);
         logicTES = new G4LogicalVolume(TES, titanium, "logicTES");
         G4VPhysicalVolume *physTES = new G4PVPlacement(0, G4ThreeVector(x , y , 0.2*m), logicTES,\
             "physTES", logicWorld, false, 0 , true);
         G4LogicalBorderSurface* logicalBorderTES = new G4LogicalBorderSurface("LogicalBorderTES", \
             physTES, physWorld, opticalTitanium);
-
         
-
     // adding Dilution Refrigerador
 
         // Define the cylinder dimensions
@@ -168,7 +170,7 @@ G4VPhysicalVolume *MyDetectorConstruction :: Construct(){
 }
 
 void MyDetectorConstruction :: ConstructSDandField(){
-    MySensitiveDetector *sensDet = new MySensitiveDetector("SensetiveDetector");
+    sensDet = new MySensitiveDetector("SensetiveDetector");
     sensDet ->SetThreshold(1*eV);
     logicTES -> SetSensitiveDetector(sensDet);
 }

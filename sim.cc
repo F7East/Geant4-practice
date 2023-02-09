@@ -8,6 +8,8 @@
 #include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
+#include "RunAction.hh"
+// #include "detector.hh"
 // #include "stepping_action.hh"
 
 /*
@@ -26,12 +28,20 @@ int main(int argc, char** argv){
 
     // Create a new instance of G4RunManager
     G4RunManager *runManager = new G4RunManager();
-    runManager->SetUserInitialization(new MyDetectorConstruction());
+    
+    MyDetectorConstruction *DetectorConstruction = new MyDetectorConstruction();
+    runManager->SetUserInitialization(DetectorConstruction);
     
     MyPhysicsList* physicsList = new MyPhysicsList();
     runManager->SetUserInitialization(physicsList);
+
     runManager->SetUserInitialization(new MyActionInitialization());    
     runManager->Initialize();
+    
+    
+    G4UserRunAction* runAction = new RunAction(DetectorConstruction->sensDet);
+    runManager->SetUserAction(runAction);
+
 
     // runManager->BeamOn(1000);
     

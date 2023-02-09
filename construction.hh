@@ -35,6 +35,8 @@ check will evaluate to false and the code between "#ifndef" and "#endif" will be
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh" // gets the SI units
 
+// steps
+#include "G4UserLimits.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction{
 
@@ -43,10 +45,11 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction{
     ~MyDetectorConstruction();
 
     virtual G4VPhysicalVolume *Construct();
+    MySensitiveDetector *sensDet;
     
     private:
     G4LogicalVolume *logicTES;
-    virtual void ConstructSDandField();
+    virtual  void ConstructSDandField();
 
 };
 
