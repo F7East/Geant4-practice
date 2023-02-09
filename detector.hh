@@ -13,10 +13,10 @@ class MySensitiveDetector : public G4VSensitiveDetector{
         ~MySensitiveDetector();
         void SetThreshold(G4double threshold);
         G4double energyTotal;
+        G4int muonCount;
 
     private:
         virtual G4bool ProcessHits(G4Step *, G4TouchableHistory *);
-        G4int muonCount;
         G4double threshold;
 
 };

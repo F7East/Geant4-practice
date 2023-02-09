@@ -14,5 +14,6 @@ void RunAction ::BeginOfRunAction(const G4Run* run)
 void RunAction::EndOfRunAction(const G4Run* run)
 {
   // Output the total energy deposited by the muon
+  G4cout << "Total muon count: " << detector -> muonCount << G4endl;
   G4cout << "Total energy deposited by muon: " << detector->energyTotal << " MeV" << G4endl;
 }
